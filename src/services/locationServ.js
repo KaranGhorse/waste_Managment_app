@@ -11,7 +11,7 @@ export const getAddressFromCoords = async (lat, lng) => {
     });
 
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     let address = `${data.address.residential}, ${data.address.city}`;
     return {fullAddress: data.display_name,address};
 
